@@ -1,0 +1,40 @@
+.float-right {
+  border: 1px solid black;
+  padding: 1rem;
+  overflow: auto;
+}
+.pineapple-right {
+  float: right;
+  width: 170px;
+  height: 170px;
+  margin: 1rem;
+}
+.pineapple-text {
+  margin: 1rem;
+}
+
+.float-left {
+  border: 1px solid black;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.pineapple-left {
+  float: left;
+  width: 170px;
+  height: 170px;
+  margin: 1rem;
+}
+
+.float-no {
+  border: 1px solid black;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.pineapple-no {
+  float: none;
+  width: 170px;
+  height: 170px;
+  margin: 1rem;
+}

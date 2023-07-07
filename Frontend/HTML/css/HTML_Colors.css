@@ -1,0 +1,143 @@
+div#color {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.colors {
+  padding: 1rem;
+  color: white;
+}
+
+.Tomato {
+  background: tomato;
+}
+
+.Orange {
+  background: orange;
+}
+
+.DodgerBlue {
+  background: DodgerBlue;
+}
+
+.MediumSeaGreen {
+  background: MediumSeaGreen;
+}
+
+.Gray {
+  background: Gray;
+}
+
+.SlateBlue {
+  background: SlateBlue;
+}
+
+.Violet {
+  background: Violet;
+}
+
+.LightGray {
+  background: LightGray;
+}
+
+@media (min-width: 600px) {
+  div#color {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  div#color {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* background color */
+.classmain {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.classmain .class1 {
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 1rem;
+}
+.classmain .class2 {
+  text-align: justify;
+  background-color: tomato;
+  padding: 1rem;
+}
+
+/* text color */
+.textcolor {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 1.25rem;
+}
+
+.textcolor .class3 {
+  color: Tomato;
+}
+.textcolor .class4 {
+  color: DodgerBlue;
+}
+.textcolor .class5 {
+  color: MediumSeaGreen;
+}
+
+/* border color */
+.border {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 1.25rem;
+}
+
+.border .border1 {
+  border: 2px solid Tomato;
+  padding: 1rem;
+}
+
+.border .border2 {
+  border: 2px solid DodgerBlue;
+  padding: 1rem;
+}
+
+.border .border3 {
+  border: 2px solid Violet;
+  padding: 1rem;
+}
+
+/* color values */
+div#colorvalues {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 1.25rem;
+}
+.clrv {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+div#colorvalues .colorvalues1 {
+  background: rgb(255, 99, 71);
+}
+div#colorvalues .colorvalues2 {
+  background: #ff6347;
+}
+div#colorvalues .colorvalues3 {
+  background: hsl(9, 100%, 64%);
+}
+div#colorvalues .colorvalues4 {
+  background: rgba(255, 99, 71, 0.5);
+}
+div#colorvalues .colorvalues5 {
+  background: hsla(9, 100%, 64%, 0.5);
+}

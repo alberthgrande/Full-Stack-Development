@@ -1,0 +1,83 @@
+div#hexcolor {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.hexc {
+  padding: 1rem;
+  color: white;
+}
+.hexcolor1 {
+  background: #ff0000;
+}
+.hexcolor2 {
+  background: #0000ff;
+}
+.hexcolor3 {
+  background: #3cb371;
+}
+.hexcolor4 {
+  background: #ee82ee;
+}
+.hexcolor5 {
+  background: #ffa500;
+}
+.hexcolor6 {
+  background: #6a5acd;
+}
+
+/* shades of gray */
+div#shades {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.sg {
+  padding: 1rem;
+  color: white;
+}
+.shades1 {
+  background: #404040;
+}
+.shades2 {
+  background: #686868;
+}
+.shades3 {
+  background: #a0a0a0;
+}
+.shades4 {
+  background: #bebebe;
+}
+.shades5 {
+  background: #dcdcdc;
+}
+.shades6 {
+  background: #f8f8f8;
+  color: #404040;
+}
+
+@media (min-width: 600px) {
+  div#hexcolor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#shades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  div#hexcolor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#shades {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

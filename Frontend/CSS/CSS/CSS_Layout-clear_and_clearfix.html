@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/CSS_Layout-clear_and_clearfix.css">
+    <title>CSS Layout - clear and clearfix</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>CSS Layout - clear and clearfix</h1>
+            </header>
+            <h3>
+                The clear Property
+            </h3>
+            <p>
+                When we use the float property, and we want the next element below (not on right or left), we will have
+                to use the clear
+                property.
+                <br><br>
+                The clear property specifies what should happen with the element that is next to a floating element.
+                <br><br>
+                The clear property can have one of the following values:
+            </p>
+            <ul>
+                <li>none - The element is not pushed below left or right floated elements. This is default</li>
+                <li>left - The element is pushed below left floated elements</li>
+                <li>right - The element is pushed below right floated elements</li>
+                <li>both - The element is pushed below both left and right floated elements</li>
+                <li>inherit - The element inherits the clear value from its parent</li>
+            </ul>
+            <p>
+                When clearing floats, you should match the clear to the float: If an element is floated to the left,
+                then you should
+                clear to the left. Your floated element will continue to float, but the cleared element will appear
+                below it on the web
+                page.
+
+                Example
+                <br><br>
+                This example clears the float to the left. Here, it means that the div2 element is pushed below the left
+                floated
+                div1 element:
+            </p>
+            <code>
+
+                div1 { <br>
+                &nbsp;float: left; <br>
+                }
+                <br><br>
+                div2 { <br>
+                &nbsp;clear: left; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>The clearfix Hack</h3>
+            </header>
+            <p>
+                If a floated element is taller than the containing element, it will "overflow" outside of its container.
+                We can then add
+                a clearfix hack to solve this problem:
+            </p>
+            <div class="clearfix1">
+                <img class="img1" src="/img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+            </div>
+            <br><br>
+            <code>
+                .clearfix { <br>
+                &nbsp; overflow: auto; <br>
+                }
+            </code>
+
+            <p>
+                The overflow: auto clearfix works well as long as you are able to keep control of your margins and
+                padding (else you
+                might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is
+                used for most
+                webpages:
+            </p>
+            <div class="clearfix2">
+                <img class="img2" src="/img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+            </div>
+            <p>
+                You will learn more about the ::after pseudo-element in a later chapter.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

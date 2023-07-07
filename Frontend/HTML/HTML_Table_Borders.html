@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_Table_Borders.css">
+    <title>HTML Table Borders</title>
+</head>
+
+<body>
+    <h1>HTML Table Borders</h1>
+    <p>HTML tables can have borders of different styles and shapes.</p>
+
+    <hr>
+
+    <h3>How To Add a Border</h3>
+    <p>
+        When you add a border to a table, you also add borders around each table cell:
+        <br><br>
+        To add a border, use the CSS border property on table, th, and td elements:
+    </p>
+
+    <table class="table1" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Collapsed Table Borders</h3>
+    <p>
+        To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+        <br><br>
+        This will make the borders collapse into a single border:
+    </p>
+
+    <table class="table2" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Style Table Borders</h3>
+    <p>
+        If you set a background color of each cell, and give the border a white color (the same as the document
+        background), you
+        get the impression of an invisible border:
+
+    </p>
+
+    <table class="table3" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Round Table Borders</h3>
+    <p>
+        With the border-radius property, the borders get rounded corners:
+    </p>
+
+    <table class="table4" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <p>Skip the border around the table by leaving out table from the css selector:</p>
+
+    <hr>
+
+    <h3>Dotted Table Borders</h3>
+    <p>With the border-style property, you can set the appearance of the border.</p>
+    <table class="table5" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <p>The following values are allowed:</p>
+    <ul>
+        <li>dotted</li>
+        <li>dashed</li>
+        <li>solid</li>
+        <li>double</li>
+        <li>groove</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li>
+        <li>none</li>
+        <li>hidden</li>
+    </ul>
+
+    <hr>
+
+    <h3>hidden</h3>
+    <p>With the border-color property, you can set the color of the border.</p>
+    <table class="table6" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+
+</html>

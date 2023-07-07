@@ -1,0 +1,35 @@
+.lists {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.navlist {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+  background-color: #333333;
+}
+
+.navlist li {
+  float: right;
+}
+
+.navlist li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  text-align: center;
+}
+.navlist li a:hover {
+  background-color: #111111;
+}
+
+@media (min-width: 600px) {
+  .lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

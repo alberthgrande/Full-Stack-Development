@@ -1,0 +1,9 @@
+.exmple-text {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.exmple:hover .exmple-text {
+  display: block;
+}

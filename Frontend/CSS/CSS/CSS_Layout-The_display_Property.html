@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The display Property</title>
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <header>
+                <h1>CSS Layout - The display Property</h1>
+            </header>
+            <p>
+                The display property is the most important CSS property for controlling layout.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>The display Property</h3>
+            </header>
+            <p>
+                Every HTML element has a default display value depending on what type of element it is. The default
+                display value for
+                most elements is block or inline.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Block-level Elements</h3>
+            </header>
+            <p>
+                A block-level element always starts on a new line and takes up the full width available (stretches out
+                to the left and
+                right as far as it can).
+                <br><br>
+                Examples of block-level elements:
+            </p>
+            <ul>
+                <li>div</li>
+                <li>h1 - h6</li>
+                <li>p</li>
+                <li>form</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>section</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Inline Elements</h3>
+            </header>
+            <p>
+                An inline element does not start on a new line and only takes up as much width as necessary.
+                <br><br>
+                This is an inline span element inside a paragraph.
+                <br><br>
+                Examples of inline elements:
+            </p>
+            <ul>
+                <li>span</li>
+                <li>a</li>
+                <li>img</li>
+            </ul>
+        </section>
+
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Display: none;</h3>
+            </header>
+            <p>
+                display: none; is commonly used with JavaScript to hide and show elements without deleting and
+                recreating them. Take a
+                look at our last example on this page if you want to know how this can be achieved.
+                <br><br>
+                The script element uses display: none; as default.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Override The Default Display Value</h3>
+                <p>
+                    As mentioned, every element has a default display value. However, you can override this.
+                    <br><br>
+                    Changing an inline element to a block element, or vice versa, can be useful for making the page look
+                    a specific way, and
+                    still follow the web standards.
+                    <br><br>
+                    A common example is making inline li elements for horizontal menus:
+                </p>
+                <code>
+
+                    li { <br>
+                    &nbsp;display: inline; <br>
+                    }
+
+                </code>
+
+                <p>
+                    Note: Setting the display property of an element only changes how the element is displayed, NOT what
+                    kind of element it
+                    is. So, an inline element with display: block; is not allowed to have other block elements inside
+                    it.
+                </p>
+
+                <code>
+
+                    span { <br>
+                    &nbsp;display: block; <br>
+                    }
+
+                </code>
+            </header>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Hide an Element - display:none or visibility:hidden?</h3>
+            </header>
+            <p>
+                Hiding an element can be done by setting the display property to none. The element will be hidden, and
+                the page will be
+                displayed as if the element is not there:
+
+                <br><br>
+
+                visibility:hidden; also hides an element.
+                <br><br>
+
+                However, the element will still take up the same space as before. The element will be hidden, but still
+                affect the
+                layout:
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

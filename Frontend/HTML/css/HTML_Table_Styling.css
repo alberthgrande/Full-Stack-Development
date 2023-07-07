@@ -1,0 +1,76 @@
+.tables {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table1 {
+  border-collapse: collapse;
+}
+
+.table1 th,
+.table1 td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table1 tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.table2 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table2 th,
+.table2 td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table2 th:nth-child(even),
+.table2 td:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.table3 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table3 th,
+.table3 td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table3 th:nth-child(even),
+.table3 td:nth-child(even),
+.table3 tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.table4 {
+  border-collapse: collapse;
+  text-align: left;
+}
+.table4 th,
+.table4 td {
+  padding: 8px;
+}
+
+.table4 tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table5 {
+  border-collapse: collapse;
+  text-align: left;
+}
+.table5 th,
+.table5 td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table5 tr:hover {
+  background: #d6eeee;
+}

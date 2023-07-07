@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/CSS_Layout-Horizontal_Vertical_Align.css">
+    <title>CSS Layout - Horizontal Vertical Align</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>CSS Layout - Horizontal Vertical Align</h1>
+            </header>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center Align Elements</h3>
+            </header>
+            <p>
+                To horizontally center a block element (like div), use margin: auto;
+                <br><br>
+                Setting the width of the element will prevent it from stretching out to the edges of its container.
+                <br><br>
+                The element will then take up the specified width, and the remaining space will be split equally between
+                the two
+                margins:
+            </p>
+            <div class="center">
+                <p>Hello World!</p>
+            </div>
+            <p>Note: Center aligning has no effect if the width property is not set (or set to 100%).</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>
+                    Center Align Text
+                </h3>
+            </header>
+            <p>
+                To just center the text inside an element, use text-align: center;
+            </p>
+            <div class="center">
+                <p>This text is centered.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center an Image</h3>
+            </header>
+            <p>
+                To center an image, set left and right margin to auto and make it into a block element:
+            </p>
+            <img src="/img/paris.jpg" alt="Paris" style="width:40%">
+
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Left and Right Align - Using position</h3>
+            </header>
+            <p>One method for aligning elements is to use position: absolute;:</p>
+            <div class="right">
+                <p>
+                    In my younger and more vulnerable years my father gave me some advice that I've been turning over in
+                    my mind ever
+                    since.
+                </p>
+            </div>
+            <p>
+                Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Left and Right Align - Using float</h3>
+            </header>
+            <p>
+                Another method for aligning elements is to use the float property:
+            </p>
+            <div class="right1">
+                <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in
+                    my mind ever
+                    since.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>The clearfix Hack</h3>
+            </header>
+            <p>
+                Note: If an element is taller than the element containing it, and it is floated, it will overflow
+                outside of its
+                container. You can use the "clearfix hack" to fix this (see example below).
+                <br><br>
+                Then we can add the clearfix hack to the containing element to fix this problem:
+            </p>
+
+            <div>
+                <img class="img1" src="/img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+            </div>
+
+            <h2 style="clear:right">With New Modern Clearfix</h2>
+            <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+            <div class="clearfix">
+                <img class="img2" src="/img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center Vertically - Using padding</h3>
+            </header>
+            <p>
+                There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom
+                padding:
+            </p>
+            <div class="center1">
+                <p>I am vertically centered.</p>
+            </div>
+
+            <p>
+                To center both vertically and horizontally, use padding and text-align: center:
+            </p>
+
+            <div class="center2">
+                <p>I am vertically and horizontally centered.</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center Vertically - Using line-height</h3>
+            </header>
+            <p>
+                Another trick is to use the line-height property with a value that is equal to the height property:
+            </p>
+            <div class="center3">
+                <p>I am vertically and horizontally centered.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center Vertically - Using position & transform</h3>
+            </header>
+            <p>
+                If padding and line-height are not options, another solution is to use positioning and the transform
+                property:
+            </p>
+            <div class="center4">
+                <p>I am vertically and horizontally centered.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Center Vertically - Using Flexbox</h3>
+            </header>
+            <p>
+                You can also use flexbox to center things. Just note that flexbox is not supported in IE10 and earlier
+                versions:
+            </p>
+            <div class="center5">
+                <p>I am vertically and horizontally centered.</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

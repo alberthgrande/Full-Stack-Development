@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_Table_Headers.css">
+    <title>HTML Table Headers</title>
+</head>
+
+<body>
+    <h1>HTML Table Headers</h1>
+    <p>HTML tables can have headers for each column or row, or for many columns/rows.</p>
+    <table class="table1" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Vertical Table Headers</h3>
+    <p>To use the first column as table headers, define the first cell in each row as a th element:</p>
+    <table class="table2" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Align Table Headers</h3>
+    <p>By default, table headers are bold and centered:</p>
+    <p>To left-align the table headers, use the CSS text-align property:</p>
+    <table class="table3" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Header for Multiple Columns</h3>
+    <p>You can have a header that spans over two or more columns.</p>
+    <p>To do this, use the colspan attribute on the th element:</p>
+    <table class="table4" style="width:100%">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <p>You will learn more about colspan and rowspan in the Table colspan & rowspan chapter.</p>
+
+    <hr>
+
+    <h3>Table Caption</h3>
+    <p>You can add a caption that serves as a heading for the entire table.</p>
+    <p>To add a caption to a table, use the caption tag:</p>
+    <table class="table5" style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+</body>
+
+</html>

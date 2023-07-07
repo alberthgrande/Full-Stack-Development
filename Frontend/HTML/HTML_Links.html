@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+
+<body>
+    <h1>HTML Links</h1>
+    <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+
+    <hr>
+
+    <h3>HTML Links - Hyperlinks</h3>
+    <p>
+        HTML links are hyperlinks.
+        <br><br>
+        You can click on a link and jump to another document.
+        <br><br>
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.
+        <br><br>
+        Note: A link does not have to be text. A link can be an image or any other HTML element!
+    </p>
+
+    <hr>
+
+    <h3>HTML Links - Syntax</h3>
+    <p>
+        The HTML a tag defines a hyperlink. It has the following syntax:
+        <br><br>
+        The most important attribute of the a element is the href attribute, which indicates the link's destination.
+        <br><br>
+        The link text is the part that will be visible to the reader.
+        <br><br>
+        Clicking on the link text, will send the reader to the specified URL address.
+        <br><br>
+        By default, links will appear as follows in all browsers:
+    </p>
+    <ul>
+        <li>An unvisited link is underlined and blue</li>
+        <li>A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>
+    </ul>
+    <p>
+        Tip: Links can of course be styled with CSS, to get another look!
+    </p>
+
+    <hr>
+
+    <h3>HTML Links - The target Attribute</h3>
+    <p>
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify
+        another
+        target for the link.
+        <br><br>
+        The target attribute specifies where to open the linked document.
+        <br><br>
+        The target attribute can have one of the following values:
+    </p>
+    <ul>
+        <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+        <li>_blank - Opens the document in a new window or tab</li>
+        <li>_parent - Opens the document in the parent frame</li>
+        <li>_top - Opens the document in the full body of the window</li>
+    </ul>
+    <p>
+        Example <br><br>
+        Use target="_blank" to open the linked document in a new browser window or tab:
+    </p>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+    <hr>
+
+    <h3>Absolute URLs vs. Relative URLs</h3>
+    <p>
+        Both examples above are using an absolute URL (a full web address) in the href attribute.
+        <br><br>
+        A local link (a link to a page within the same website) is specified with a relative URL (without the
+        "https://www"
+        part):
+    </p>
+
+    <hr>
+
+    <h3>HTML Links - Use an Image as a Link</h3>
+    <p>
+        To use an image as a link, just put the img tag inside the a tag:
+    </p>
+
+    <hr>
+
+    <h3>Link to an Email Address</h3>
+    <p>
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a
+        new
+        email):
+    </p>
+
+    <hr>
+
+    <h3>Button as a Link</h3>
+    <p>
+        To use an HTML button as a link, you have to add some JavaScript code.
+        <br><br>
+        JavaScript allows you to specify what happens at certain events, such as a click of a button:
+    </p>
+
+    <hr>
+
+    <h3>Link Titles</h3>
+    <p>
+        The title attribute specifies extra information about an element. The information is most often shown as a
+        tooltip text
+        when the mouse moves over the element.
+    </p>
+
+    <hr>
+
+    <h3>
+        More on Absolute URLs and Relative URLs
+    </h3>
+    <p>
+        Example
+        <br>
+        Use a full URL to link to a web page:
+        <br><br>
+        Example
+        <br>
+        Link to a page located in the html folder on the current web site:
+        <br><br>
+        Example <br>
+        Link to a page located in the same folder as the current page:
+    </p>
+
+    <hr>
+
+    <h3>Chapter Summary</h3>
+    <ul>
+        <li>Use the a element to define a link</li>
+        <li>Use the href attribute to define the link address</li>
+        <li>Use the target attribute to define where to open the linked document</li>
+        <li>Use the img element (inside a) to use an image as a link</li>
+        <li>Use the mailto: scheme inside the href attribute to create a link that opens the user's email program</li>
+    </ul>
+</body>
+
+</html>

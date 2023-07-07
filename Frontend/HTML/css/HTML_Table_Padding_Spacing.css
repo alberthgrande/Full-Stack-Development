@@ -1,0 +1,19 @@
+.table1,
+.table1 th,
+.table1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table1 th,
+.table1 td {
+  padding: 15px;
+}
+
+.table2,
+.table2 th,
+.table2 td {
+  border: 1px solid black;
+}
+.table2 {
+  border-spacing: 30px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML picture Element</title>
+</head>
+
+<body>
+    <h1>HTML picture Element</h1>
+    <p>
+        The HTML picture element allows you to display different pictures for different devices or screen sizes.
+    </p>
+
+    <hr>
+
+    <h3>The HTML picture Element</h3>
+    <div>
+        <p>
+            The HTML picture element gives web developers more flexibility in specifying image resources.
+            <br><br>
+            The picture> element contains one or more
+            source elements, each referring to different images through the srcset attribute. This way the browser can
+            choose the image that best fits the current view and/or device.
+            <br><br>
+            Each source element has a media attribute that defines when the image is the most suitable.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>When to use the Picture Element</h3>
+    <div>
+        <p>
+            There are two main purposes for the picture element:
+            <br><br>
+            1. Bandwidth <br>
+            If you have a small screen or device, it is not necessary to load a large image file. The browser will use
+            the first
+            source element with matching attribute values, and ignore any of the following elements.
+            <br><br>
+            2. Format Support <br>
+            Some browsers or devices may not support all image formats. By using the picture element, you can add images
+            of all
+            formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+        </p>
+    </div>
+</body>
+
+</html>

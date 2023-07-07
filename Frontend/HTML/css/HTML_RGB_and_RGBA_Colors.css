@@ -1,0 +1,119 @@
+div#rgbcolor {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.rgb {
+  padding: 1rem;
+  color: white;
+}
+div#rgbcolor .rgbcolors1 {
+  background: rgb(255, 0, 0);
+}
+div#rgbcolor .rgbcolors2 {
+  background: rgb(0, 0, 255);
+}
+div#rgbcolor .rgbcolors3 {
+  background: rgb(60, 179, 113);
+}
+div#rgbcolor .rgbcolors4 {
+  background: rgb(238, 130, 238);
+}
+div#rgbcolor .rgbcolors5 {
+  background: rgb(255, 165, 0);
+}
+div#rgbcolor .rgbcolors6 {
+  background: rgb(106, 90, 205);
+}
+
+/* shades of gray */
+div#shadesgray {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.sg {
+  padding: 1rem;
+  color: white;
+}
+div#shadesgray .shadesgray1 {
+  background: rgb(60, 60, 60);
+}
+div#shadesgray .shadesgray2 {
+  background: rgb(100, 100, 100);
+}
+div#shadesgray .shadesgray3 {
+  background: rgb(140, 140, 140);
+}
+div#shadesgray .shadesgray4 {
+  background: rgb(180, 180, 180);
+}
+div#shadesgray .shadesgray5 {
+  background: rgb(200, 200, 200);
+}
+div#shadesgray .shadesgray6 {
+  background: rgb(240, 240, 240);
+}
+
+/* rgba */
+div#rgba {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: rgb(240, 240, 240);
+}
+.rgba {
+  padding: 1rem;
+  color: white;
+}
+div#rgba .rgba1 {
+  background: rgba(255, 99, 71, 0);
+}
+div#rgba .rgba2 {
+  background: rgba(255, 99, 71, 0.2);
+}
+div#rgba .rgba3 {
+  background: rgba(255, 99, 71, 0.4);
+}
+div#rgba .rgba4 {
+  background: rgba(255, 99, 71, 0.6);
+}
+div#rgba .rgba5 {
+  background: rgba(255, 99, 71, 0.8);
+}
+div#rgba .rgba6 {
+  background: rgba(255, 99, 71, 1);
+}
+
+@media (min-width: 600px) {
+  div#rgbcolor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#shadesgray {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#rgba {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  div#rgbcolor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#shadesgray {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#rgba {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

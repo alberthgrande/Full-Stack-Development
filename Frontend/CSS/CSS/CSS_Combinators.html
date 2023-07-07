@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/CSS_Combinators.css">
+    <title>CSS Combinators</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <header>
+                <h1>CSS Combinators</h1>
+            </header>
+            <p>
+                A combinator is something that explains the relationship between the selectors.
+                <br><br>
+                A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a
+                combinator.
+                <br><br>
+                There are four different combinators in CSS:
+            </p>
+            <ul>
+                <li>descendant selector (space)</li>
+                <li>child selector (>)</li>
+                <li>adjacent sibling selector (+)</li>
+                <li>general sibling selector (~)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Descendant Selector</h3>
+            </header>
+            <p>
+                The descendant selector matches all elements that are descendants of a specified element.
+                <br><br>
+                The following example selects all p elements inside
+                div elements:
+            </p>
+            <code>
+                div p { <br>
+                &nbsp;background-color: yellow; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Child Selector (>)</h3>
+            </header>
+
+            <p>
+                The child selector selects all elements that are the children of a specified element.
+                <br><br>
+                The following example selects all p elements that are children of a
+                div element:
+            </p>
+            <code>
+                div > p { <br>
+                &nbsp;background-color: yellow; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Adjacent Sibling Selector (+)</h3>
+            </header>
+            <p>
+                The adjacent sibling selector is used to select an element that is directly after another specific
+                element.
+                <br><br>
+                Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+                <br><br>
+                The following example selects the first p element that are placed immediately after
+                div elements:
+            </p>
+            <code>
+                div + p { <br>
+                &nbsp;background-color: yellow; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>General Sibling Selector (~)</h3>
+            </header>
+            <p>
+                The general sibling selector selects all elements that are next siblings of a specified element.
+                <br><br>
+                The following example selects all p elements that are next siblings of
+                div elements:
+            </p>
+            <code>
+                div ~ p { <br>
+                &nbsp;background-color: yellow; <br>
+                }
+            </code>
+        </section>
+    </main>
+</body>
+
+</html>

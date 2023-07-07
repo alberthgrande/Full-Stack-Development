@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Maps</title>
+</head>
+
+<body>
+    <h1>HTML Image Maps</h1>
+    <p>With HTML image maps, you can create clickable areas on an image.</p>
+
+    <hr>
+
+    <h3>Image Maps</h3>
+    <div>
+        <p>
+            The HTML map tag defines an image map. An image map is an image with clickable areas. The areas are defined
+            with
+            one
+            or more area tags.
+            <br><br>
+            Try to click on the computer, phone, or the cup of coffee in the image below:
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>How Does it Work?</h3>
+    <div>
+        The idea behind an image map is that you should be able to perform different actions depending on where in the
+        image you
+        click.
+        <br><br>
+        To create an image map you need an image, and some HTML code that describes the clickable areas.
+    </div>
+
+    <hr>
+
+    <h3>How Does it Work?</h3>
+    <div>
+        <p>
+            The idea behind an image map is that you should be able to perform different actions depending on where in
+            the image you
+            click.
+            <br><br>
+            To create an image map you need an image, and some HTML code that describes the clickable areas.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>The Image</h3>
+    <p>
+        The image is inserted using the img tag. The only difference from other images is that you must add a usemap
+        attribute:
+        <br><br>
+        The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a
+        relationship
+        between the image and the image map.
+    </p>
+
+    <hr>
+
+    <h3>Create Image Map</h3>
+    <p>
+        Then, add a map element.
+        <br><br>
+        The map element is used to create an image map, and is linked to the image by using the required name
+        attribute:
+        <br><br>
+        The name attribute must have the same value as the img's usemap attribute .
+    </p>
+
+    <hr>
+
+    <h3>The Areas</h3>
+    <div>
+        <p>
+            Then, add the clickable areas.
+            <br><br>
+            A clickable area is defined using an area element.
+            <br><br>
+            Shape
+            <br>
+            You must define the shape of the clickable area, and you can choose one of these values:
+        </p>
+        <ul>
+            <li>rect - defines a rectangular region</li>
+            <li>circle - defines a circular region</li>
+            <li>poly - defines a polygonal region</li>
+            <li>default - defines the entire region</li>
+        </ul>
+        <p>You must also define some coordinates to be able to place the clickable area onto the image.</p>
+    </div>
+
+    <hr>
+
+    <h3>Shape="rect"</h3>
+    <div>
+        <p>
+            The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+            <br><br>
+            So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:
+            <br><br>
+            The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top:
+            <br><br>
+            Now we have enough data to create a clickable rectangular area:
+            <br><br>
+            This is the area that becomes clickable and will send the user to the page "computer.htm":
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Shape="circle"</h3>
+    <div>
+        <p>
+            To add a circle area, first locate the coordinates of the center of the circle:
+            <br><br>
+            337,300
+            Then specify the radius of the circle:
+            <br><br>
+            44 pixels
+            <br><br>
+            Now you have enough data to create a clickable circular area:
+            <br><br>
+            This is the area that becomes clickable and will send the user to the page "coffee.htm":
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Shape="poly"</h3>
+    <div>
+        <p>
+            The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a
+            polygon).
+            <br><br>
+            This can be used to create any shape.
+            <br><br>
+            Like maybe a croissant shape!
+            <br><br>
+            How can we make the croissant in the image below become a clickable link?
+            <br><br>
+            We have to find the x and y coordinates for all edges of the croissant:
+            <br><br>
+            The coordinates come in pairs, one for the x-axis and one for the y-axis:
+            <br><br>
+            This is the area that becomes clickable and will send the user to the page "croissant.htm":
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Image Map and JavaScript</h3>
+    <div>
+        <p>
+            A clickable area can also trigger a JavaScript function.
+            <br><br>
+            Add a click event to the area element to execute a JavaScript function:
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Chapter Summary</h3>
+    <ul>
+        <li>Use the HTML map element to define an image map</li>
+        <li>Use the HTML area element to define the clickable areas in the image map</li>
+        <li>Use the HTML usemap attribute of the img element to point to an image map</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/CSS_Box_Model.css">
+    <title>CSS Box Model</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <header>
+                <h1>CSS Box Model</h1>
+            </header>
+            <p>All HTML elements can be considered as boxes.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>The CSS Box Model</h3>
+            </header>
+            <p>
+                In CSS, the term "box model" is used when talking about design and layout.
+                <br><br>
+                The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins,
+                borders, padding,
+                and the actual content. The image below illustrates the box model:
+            </p>
+            <div class="margin">
+                <p>Margin</p>
+                <div class="border">
+                    <p>Border</p>
+                    <div class="padding">
+                        <p>Padding</p>
+                        <div class="content">
+                            <p>Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Explanation of the different parts:</p>
+            <ul>
+                <li>Content - The content of the box, where text and images appear</li>
+                <li>Padding - Clears an area around the content. The padding is transparent</li>
+                <li>Border - A border that goes around the padding and content</li>
+                <li>Margin - Clears an area outside the border. The margin is transparent</li>
+            </ul>
+        </section>
+
+        <section>
+            <header>
+                <h3>Width and Height of an Element</h3>
+            </header>
+            <p>
+                In order to set the width and height of an element correctly in all browsers, you need to know how the
+                box model works.
+            </p>
+            <article>
+                <strong>Important:</strong> When you set the width and height properties of an element with CSS, you
+                just set the width and height of the
+                <strong>content area</strong>. To calculate the full size of an element, you must also add padding,
+                borders and margins.
+            </article>
+            <p>
+                Example <br><br>
+                This div element will have a total width of 350px:
+                <br><br>
+                <code>
+                    div { <br>
+                    &nbsp;width: 320px; <br>
+                    &nbsp;padding: 10px; <br>
+                    &nbsp;border: 5px solid gray; <br>
+                    &nbsp;margin: 0; <br>
+                    }
+                </code>
+                <br><br>
+                Here is the calculation: <br><br>
+                <code>
+                    320px (width) <br>
+                    + 20px (left + right padding) <br>
+                    + 10px (left + right border) <br>
+                    + 0px (left + right margin) <br>
+                    = 350px
+                </code>
+
+                <br><br>
+
+                The total width of an element should be calculated like this:
+                <br><br>
+                Total element width = width + left padding + right padding + left border + right border + left margin +
+                right margin
+                <br><br>
+                The total height of an element should be calculated like this:
+                <br><br>
+                Total element height = height + top padding + bottom padding + top border + bottom border + top margin +
+                bottom margin
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3></h3>
+            </header>
+        </section>
+    </main>
+
+</body>
+
+</html>

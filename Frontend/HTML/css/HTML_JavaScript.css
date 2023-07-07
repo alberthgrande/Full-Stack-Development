@@ -1,0 +1,26 @@
+* {
+  font-family: Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.example {
+  background: #e7e9eb;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.example_inner {
+  padding: 1rem;
+  background: white;
+}
+.example_title {
+  font-size: 1.75rem;
+}

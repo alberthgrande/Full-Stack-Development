@@ -1,0 +1,40 @@
+.table1,
+th,
+td {
+  border: 1px solid black;
+}
+.table2,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table3,
+.table3 th,
+.table3 td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.table3 th,
+.table3 td {
+  background-color: #96d4d4;
+}
+.table4 th,
+.table4 td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.table5,
+.table5 th,
+.table5 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-style: dotted;
+}
+.table6,
+.table6 th,
+.table6 td {
+  border: 2px solid #96d4d4;
+  border-collapse: collapse;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_Table_Sizes.css">
+    <title>HTML Table Sizes</title>
+</head>
+
+<body>
+    <h1>HTML Table Sizes</h1>
+    <p>
+        HTML tables can have different sizes for each column, row or the entire table.
+        <br><br>
+        Use the style attribute with the width or height properties to specify the size of a table, row or column.
+    </p>
+
+    <hr>
+
+    <h3>HTML Table Width</h3>
+    <p>
+        To set the width of a table, add the style attribute to the
+        table element:
+    </p>
+    <table class="table1" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <p>
+        Note: Using a percentage as the size unit for a width means how wide will this element be compared to its parent
+        element, which in this case is the
+
+        body element.
+    </p>
+
+    <hr>
+
+    <h3>HTML Table Column Width</h3>
+    <p>
+        To set the size of a specific column, add the style attribute on a th or
+        td element:
+    </p>
+    <table class="table2" style="width:100%">
+        <tr>
+            <th style="width:70%">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>HTML Table Row Height</h3>
+    <p>
+        To set the height of a specific row, add the style attribute on a table row element:
+    </p>
+    <table class="table3" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr style="height:200px">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

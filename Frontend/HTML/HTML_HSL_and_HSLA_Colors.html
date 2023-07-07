@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_HSL_and_HSLA_Colors.css">
+    <title>HTML HSL and HSLA Colors</title>
+</head>
+
+<body>
+    <h1>HTML HSL and HSLA Colors</h1>
+    <p>
+        HSL stands for hue, saturation, and lightness.
+        <br><br>
+        HSLA color values are an extension of HSL with an Alpha channel (opacity).
+    </p>
+
+    <hr>
+
+    <h3>HSL Color Values</h3>
+    <p>
+        In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+        <br><br>
+        <strong><em>hsl(hue, saturation, lightness)</em></strong>
+        <br><br>
+        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+        <br><br>
+        Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+        <br><br>
+        Lightness is also a percentage value. 0% is black, and 100% is white.
+        <br><br>
+        Experiment by mixing the HSL values below:
+    </p>
+    <div id="hslcolor">
+        <div class="hsl hslcolor1">hsl(0, 100%, 50%)</div>
+        <div class="hsl hslcolor2">hsl(240, 100%, 50%)</div>
+        <div class="hsl hslcolor3">hsl(147, 50%, 47%)</div>
+        <div class="hsl hslcolor4">hsl(300, 76%, 72%)</div>
+        <div class="hsl hslcolor5">hsl(39, 100%, 50%)</div>
+        <div class="hsl hslcolor6">hsl(248, 53%, 58%)</div>
+    </div>
+
+    <hr>
+
+    <h3>Saturation</h3>
+    <p>
+        Saturation can be described as the intensity of a color.
+        <br><br>
+        100% is pure color, no shades of gray.
+        <br><br>
+        50% is 50% gray, but you can still see the color.
+        <br><br>
+        0% is completely gray; you can no longer see the color.
+    </p>
+    <div id="saturation">
+        <div class="sat saturation1">hsl(0, 100%, 50%)</div>
+        <div class="sat saturation2">hsl(0, 80%, 50%)</div>
+        <div class="sat saturation3">hsl(0, 60%, 50%)</div>
+        <div class="sat saturation4">hsl(0, 40%, 50%)</div>
+        <div class="sat saturation5">hsl(0, 20%, 50%)</div>
+        <div class="sat saturation6">hsl(0, 0%, 50%)</div>
+    </div>
+
+    <hr>
+
+    <h3>Lightness</h3>
+    <p>
+        The lightness of a color can be described as how much light you want to give the color, where 0% means no light
+        (black),
+        50% means 50% light (neither dark nor light), and 100% means full lightness (white).
+    </p>
+    <div id="lightness">
+        <div class="lt lightness1">hsl(0, 100%, 0%)</div>
+        <div class="lt lightness2">hsl(0, 100%, 25%)</div>
+        <div class="lt lightness3">hsl(0, 100%, 50%)</div>
+        <div class="lt lightness4">hsl(0, 100%, 75%)</div>
+        <div class="lt lightness5">hsl(0, 100%, 90%)</div>
+        <div class="lt lightness6">hsl(0, 100%, 100%)</div>
+    </div>
+
+    <hr>
+
+    <h3>Shades of Gray</h3>
+    <p>
+        Shades of gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to
+        100% to
+        get darker/lighter shades:
+    </p>
+    <div id="shadesgray">
+        <div class="sg shadesgray1">hsl(0, 0%, 20%)</div>
+        <div class="sg shadesgray2">hsl(0, 0%, 30%)</div>
+        <div class="sg shadesgray3">hsl(0, 0%, 40%)</div>
+        <div class="sg shadesgray4">hsl(0, 0%, 60%)</div>
+        <div class="sg shadesgray5">hsl(0, 0%, 70%)</div>
+        <div class="sg shadesgray6">hsl(0, 0%, 90%)</div>
+    </div>
+
+    <hr>
+
+    <h3>HSLA Color Values</h3>
+    <p>
+        HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for
+        a color.
+        <br><br>
+        An HSLA color value is specified with:
+        <br><br>
+        hsla(hue, saturation, lightness, alpha)
+        <br><br>
+        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+        <br><br>
+        Experiment by mixing the HSLA values below:
+    </p>
+    <div id="hslacolor">
+        <div class="hsla hslacolor1">hsla(9, 100%, 64%, 0)</div>
+        <div class="hsla hslacolor2">hsla(9, 100%, 64%, 0.2)</div>
+        <div class="hsla hslacolor3">hsla(9, 100%, 64%, 0.4)</div>
+        <div class="hsla hslacolor4">hsla(9, 100%, 64%, 0.6)</div>
+        <div class="hsla hslacolor5">hsla(9, 100%, 64%, 0.8)</div>
+        <div class="hsla hslacolor6">hsla(9, 100%, 64%, 1)</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_RGB_and_RGBA_Colors.css">
+    <title>HTML RGB and RGBA Colors</title>
+</head>
+
+<body>
+    <h1>HTML RGB and RGBA Colors</h1>
+    <p>
+        An RGB color value represents RED, GREEN, and BLUE light sources.
+        <br><br>
+        An RGBA color value is an extension of RGB with an Alpha channel (opacity).
+    </p>
+
+    <hr>
+
+    <h3>RGB Color Values</h3>
+    <p>
+        In HTML, a color can be specified as an RGB value, using this formula:
+        <br><br>
+        <strong>rgb(red, green, blue)</strong>
+        <br><br>
+        Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+        <br><br>
+        This means that there are 256 x 256 x 256 = 16777216 possible colors!
+        <br><br>
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other
+        two (green
+        and blue) are set to 0.
+        <br><br>
+        Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the
+        other
+        two (red and blue) are set to 0.
+        <br><br>
+        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+        <br><br>
+        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+        <br><br>
+        Experiment by mixing the RGB values below:
+    </p>
+    <div id="rgbcolor">
+        <p class="rgb rgbcolors1">rgb(255, 0, 0)</p>
+        <p class="rgb rgbcolors2">rgb(0, 0, 255)</p>
+        <p class="rgb rgbcolors3">rgb(60, 179, 113)</p>
+        <p class="rgb rgbcolors4">rgb(238, 130, 238)</p>
+        <p class="rgb rgbcolors5">rgb(255, 165, 0)</p>
+        <p class="rgb rgbcolors6">rgb(106, 90, 205)</p>
+    </div>
+
+    <hr>
+
+    <h3>Shades of Gray</h3>
+    <p>Shades of gray are often defined using equal values for all three parameters:</p>
+    <div id="shadesgray">
+        <p class="sg shadesgray1">rgb(60, 60, 60)</p>
+        <p class="sg shadesgray2">rgb(100, 100, 100)</p>
+        <p class="sg shadesgray3">rgb(140, 140, 140)</p>
+        <p class="sg shadesgray4">rgb(180, 180, 180)</p>
+        <p class="sg shadesgray5">rgb(200, 200, 200)</p>
+        <p class="sg shadesgray6">rgb(240, 240, 240)</p>
+    </div>
+
+    <hr>
+
+    <h3>RGBA Color Values</h3>
+    <p>
+        RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a
+        color.
+        <br><br>
+        An RGBA color value is specified with:
+        <br><br>
+        <strong>rgba(red, green, blue, alpha)</strong>
+        <br><br>
+        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+        <br><br>
+        Experiment by mixing the RGBA values below:
+    </p>
+    <div id="rgba">
+        <p class="rgba rgba1">rgba(255, 99, 71, 0)</p>
+        <p class="rgba rgba2">rgba(255, 99, 71, 0.2)</p>
+        <p class="rgba rgba3">rgba(255, 99, 71, 0.4)</p>
+        <p class="rgba rgba4">rgba(255, 99, 71, 0.6)</p>
+        <p class="rgba rgba5">rgba(255, 99, 71, 0.8)</p>
+        <p class="rgba rgba6">rgba(255, 99, 71, 1)</p>
+    </div>
+</body>
+
+</html>

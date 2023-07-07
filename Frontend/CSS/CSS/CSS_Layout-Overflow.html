@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/CSS_Layout-Overflow.css">
+    <title>CSS Layout - Overflow</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>CSS Layout - Overflow</h1>
+            </header>
+            <p>
+                The CSS overflow property controls what happens to content that is too big to fit into an area.
+            </p>
+            <article>
+                <p>
+                    This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar
+                    is added to help the
+                    reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                    exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in
+                    vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                    accumsan et iusto
+                    odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                    facilisi. Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
+                    assum. Typi non
+                    habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>CSS Overflow</h3>
+            </header>
+            <p>
+                The overflow property specifies whether to clip the content or to add scrollbars when the content of an
+                element is too
+                big to fit in the specified area.
+
+                <br><br>
+
+                The overflow property has the following values:
+
+
+            </p>
+            <ul>
+                <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+                <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+                <li>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+                <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+            </ul>
+
+            <p>
+                Note: The overflow property only works for block elements with a specified height.
+                <br><br>
+                Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even
+                though
+                "overflow:scroll" is set).
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>overflow: visible</h3>
+            </header>
+
+            <p>
+                By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's
+                box:
+            </p>
+
+            <article id="overflow-visible">
+                <p>
+                    You can use the overflow property when you want to have better control of the layout. The overflow
+                    property specifies
+                    what happens if content overflows an element's box.
+                </p>
+            </article>
+        </section>
+
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>overflow: hidden</h3>
+            </header>
+            <p>
+                With the hidden value, the overflow is clipped, and the rest of the content is hidden:
+            </p>
+            <article id="overflow-hidden">
+                <p>
+                    You can use the overflow property when you want to have better control of the layout. The overflow
+                    property specifies
+                    what happens if content overflows an element's box.
+                </p>
+            </article>
+        </section>
+
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>overflow: scroll</h3>
+            </header>
+            <p>
+                Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box.
+                Note that this
+                will add a scrollbar both horizontally and vertically (even if you do not need it):
+            </p>
+            <article id="overflow-scroll">
+                <p>
+                    You can use the overflow property when you want to have better control of the layout. The overflow
+                    property specifies
+                    what happens if content overflows an element's box.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>overflow: auto</h3>
+            </header>
+            <p>
+                The auto value is similar to scroll, but it adds scrollbars only when necessary:
+            </p>
+            <article id="overflow-auto">
+                <p>
+                    You can use the overflow property when you want to have better control of the layout. The overflow
+                    property specifies
+                    what happens if content overflows an element's box.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>overflow-x and overflow-y</h3>
+            </header>
+            <p>
+                The overflow-x and overflow-y properties specifies whether to change the overflow of content just
+                horizontally or
+                vertically (or both):
+                <br><br>
+                overflow-x specifies what to do with the left/right edges of the content. <br>
+                overflow-y specifies what to do with the top/bottom edges of the content
+            </p>
+            <article id="overflow-xy">
+                <p>
+                    You can use the overflow property when you want to have better control of the layout. The overflow
+                    property specifies
+                    what happens if content overflows an element's box.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

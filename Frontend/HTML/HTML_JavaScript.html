@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- js file -->
+    <script defer src="/js/HTML_JavaScript.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/HTML_JavaScript.css">
+    <title>HTML JavaScript</title>
+</head>
+
+<body>
+    <h1>HTML JavaScript</h1>
+    <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="example_inner">
+            <h3 class="example_title">My First JavaScript</h3>
+            <button onclick="dateTime()">Click me to display Date and Time</button>
+            <p id="demo1"></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>The HTML script Tag</h3>
+    <div>
+        <p>
+            The HTML
+            script tag is used to define a client - side script(JavaScript).
+            <br><br>
+            The script element either contains script statements, or it points to an external script file through the
+            src attribute.
+            <br><br>
+            Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+            <br><br>
+            To select an HTML element, JavaScript most often uses the document.getElementById() method.
+            <br><br>
+            This JavaScript example writes "Hello JavaScript!" into an HTML element with id = "demo":
+        </p>
+        <code>
+           <em>document.getElementById("demo").innerHTML = "Hello JavaScript!";</em>
+        </code>
+    </div>
+
+    <hr>
+
+    <h3>A Taste of JavaScript</h3>
+    <p>Here are some examples of what JavaScript can do:</p>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="example_inner">
+            <h3 class="example_title">My First JavaScript</h3>
+            <button type="button" onclick="myFunction2()">Click me!</button>
+            <p id="demo2">This is a demonstration.</p>
+        </div>
+    </div>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="example_inner">
+            <h3 class="example_title">My First JavaScript</h3>
+            <button type="button" onclick="myFunction3()">Click me!</button>
+            <p id="demo3">JavaScript can change the style of an HTML element.</p>
+        </div>
+    </div>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="example_inner">
+            <h3 class="example_title">My First JavaScript</h3>
+            <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+            <img id="bulb" src="/img/pic_bulboff.gif" width="100" height="180">
+            <br><br>
+            <button type="button" onclick="ligthsw(1)">Light On</button>
+            <button type="button" onclick="ligthsw(0)">Light Off</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>The HTML noscript Tag</h3>
+
+    <div>
+        <p>
+            The HTML noscript tag defines an alternate content to be displayed to users that have disabled scripts in
+            their
+            browser or have a browser that doesn't support scripts:
+        </p>
+        <code>
+            <em>
+                &lt;noscript&gt;Sorry, your browser does not support JavaScript! &lt;/noscript&gt;
+            </em>
+        </code>
+    </div>
+
+</body>
+
+</html>

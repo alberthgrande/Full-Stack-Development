@@ -1,0 +1,202 @@
+div#hslcolor {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.hsl {
+  padding: 1rem;
+  color: white;
+}
+.hslcolor1 {
+  background: hsl(0, 100%, 50%);
+}
+.hslcolor2 {
+  background: hsl(240, 100%, 50%);
+}
+.hslcolor3 {
+  background: hsl(147, 50%, 47%);
+}
+.hslcolor4 {
+  background: hsl(300, 76%, 72%);
+}
+.hslcolor5 {
+  background: hsl(39, 100%, 50%);
+}
+.hslcolor6 {
+  background: hsl(248, 53%, 58%);
+}
+
+/* saturation */
+div#saturation {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.sat {
+  padding: 1rem;
+  color: white;
+}
+.saturation1 {
+  background: hsl(0, 100%, 50%);
+}
+.saturation2 {
+  background: hsl(0, 80%, 50%);
+}
+.saturation3 {
+  background: hsl(0, 60%, 50%);
+}
+.saturation4 {
+  background: hsl(0, 40%, 50%);
+}
+.saturation5 {
+  background: hsl(0, 20%, 50%);
+}
+.saturation6 {
+  background: hsl(0, 0%, 50%);
+}
+
+/* lightness */
+div#lightness {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.lt {
+  padding: 1rem;
+  color: white;
+}
+.lightness1 {
+  background: hsl(0, 100%, 0%);
+}
+.lightness2 {
+  background: hsl(0, 100%, 25%);
+}
+.lightness3 {
+  background: hsl(0, 100%, 50%);
+}
+.lightness4 {
+  background: hsl(0, 100%, 75%);
+}
+.lightness5 {
+  background: hsl(0, 100%, 90%);
+}
+.lightness6 {
+  background: hsl(0, 100%, 100%);
+  color: hsl(0, 0%, 50%);
+}
+
+/* shades of gray */
+div#shadesgray {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.sg {
+  padding: 1rem;
+  color: white;
+}
+.shadesgray1 {
+  background: hsl(0, 0%, 20%);
+}
+.shadesgray2 {
+  background: hsl(0, 0%, 30%);
+}
+.shadesgray3 {
+  background: hsl(0, 0%, 40%);
+}
+.shadesgray4 {
+  background: hsl(0, 0%, 60%);
+}
+.shadesgray5 {
+  background: hsl(0, 0%, 70%);
+}
+.shadesgray6 {
+  background: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 50%);
+}
+
+/* hslacolor */
+div#hslacolor {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.hsla {
+  padding: 1rem;
+  color: white;
+}
+.hslacolor1 {
+  background: hsla(9, 100%, 64%, 0);
+  color: hsl(0, 0%, 50%);
+}
+.hslacolor2 {
+  background: hsla(9, 100%, 64%, 0.2);
+}
+.hslacolor3 {
+  background: hsla(9, 100%, 64%, 0.4);
+}
+.hslacolor4 {
+  background: hsla(9, 100%, 64%, 0.6);
+}
+.hslacolor5 {
+  background: hsla(9, 100%, 64%, 0.8);
+}
+.hslacolor6 {
+  background: hsla(9, 100%, 64%, 1);
+}
+@media (min-width: 600px) {
+  div#hslcolor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#saturation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#lightness {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#shadesgray {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div#hslacolor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  div#hslcolor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#saturation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#lightness {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#shadesgray {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div#hslacolor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

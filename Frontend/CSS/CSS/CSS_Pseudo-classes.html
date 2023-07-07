@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/CSS_Pseudo-classes.css">
+    <title>CSS Pseudo-classes</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>CSS Pseudo-classes</h1>
+            </header>
+            <hr>
+            <h3>What are Pseudo-classes?</h3>
+            <p>
+                A pseudo-class is used to define a special state of an element.
+                <br><br>
+                For example, it can be used to:
+            </p>
+            <ul>
+                <lu>Style an element when a user mouses over it</lu>
+                <lu>Style visited and unvisited links differently</lu>
+                <lu>Style an element when it gets focus</lu>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Syntax</h3>
+            </header>
+            <p>The syntax of pseudo-classes:</p>
+            <code>
+                selector:pseudo-class { <br>
+                &nbsp;property: value; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Anchor Pseudo-classes</h3>
+            </header>
+            <p>Links can be displayed in different ways:</p>
+
+            <code>
+                /* unvisited link */ <br>
+                a:link { <br>
+                &nbsp;color: #FF0000; <br>
+                }<br><br>
+                
+                /* visited link */<br>
+                a:visited { <br>
+                &nbsp;color: #00FF00;<br>
+                }<br><br>
+                
+                /* mouse over link */<br>
+                a:hover {<br>
+                &nbsp;color: #FF00FF;<br>
+                }<br><br>
+                
+                /* selected link */<br>
+                a:active {<br>
+                &nbsp;color: #0000FF;<br>
+                }
+            </code>
+            <p>
+                Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!
+                a:active MUST come
+                after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Pseudo-classes and HTML Classes</h3>
+            </header>
+            <p>
+                Pseudo-classes can be combined with HTML classes:
+                <br><br>
+                When you hover over the link in the example, it will change color:
+            </p>
+            <code>
+                a.highlight:hover { <br>
+                &nbsp;color: #ff0000; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Hover on div</h3>
+            </header>
+            <p>An example of using the :hover pseudo-class on a div element:</p>
+            <code>
+                div:hover { <br>
+                &nbsp;background-color: blue; <br>
+                }
+            </code>
+        </section>
+
+        <hr>
+
+        <section>
+            <header>
+                <h3>Simple Tooltip Hover</h3>
+            </header>
+            <p>
+                Hover over a div element to show a p element (like a tooltip):
+                <br><br>
+                Hover over me to show the p element.
+            </p>
+            <div class="exmple">Hover over this div element to show the p element
+                <p class="exmple-text">Tada! Here I am!</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
